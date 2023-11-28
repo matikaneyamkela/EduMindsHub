@@ -9,6 +9,10 @@ body{
 header{
     background: linear-gradient(to right, #f30404, #a129b9);
     width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 /*-------------navigation bar------------------*/
