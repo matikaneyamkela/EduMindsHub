@@ -4,9 +4,7 @@ body{
     box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-strong{
-    color: #a704f3;
-}
+
 /*-----------------site header---------------------*/
 header{
     background: linear-gradient(to right, #f30404, #a129b9);
@@ -16,7 +14,9 @@ header{
     top: 0;
     left: 0;
 }
-
+strong{
+    color: #a704f3;
+}
 /*-------------navigation bar------------------*/
 nav{
     margin-left: 2%;
@@ -26,10 +26,6 @@ nav a{
     color: white;
     margin-right: 2%;
     font-weight: bold;
-}
-.links{
-    color: blue;
-    text-decoration: underline;
 }
 nav a:hover{
      background-color: white;
@@ -78,6 +74,10 @@ nav img{
    flex-direction: row;
  
 }
+.links{
+    color: blue;
+    text-decoration: underline;
+}
 .member{
     padding: 0.5%;
     margin-bottom: 1%;
@@ -93,8 +93,67 @@ nav img{
     text-align: justify;
     font-size: 12px;
 }
+
+/*---------------icons--------------------*/
+.icon-container{
+    display: flex;
+    width: 20%;
+    margin-left: 41%;
+ 
+    padding: .5%;
+   
+}
+.icon-container img{
+    margin-left: 20px;
+}
+.socializing{
+    color: #a704f3;
+    text-align: center;
+}
+.list-items{
+    background-color: black;
+    width: 94%;
+    margin-left: 1%;
+    padding: 2%;
+    display: flex;
+
+}
+.list-items li{
+    list-style: none;
+}
+.list-items li a{
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 0.4%;
+}
+.colums{
+    width: 30%;
+   
+    margin-right: 6%;
+    padding: 2%;
+}
+.last-update{
+    background-color: yellow;
+    width: 90%;
+    margin-left: 5%;
+}
+.last-update .Update{
+    color: blue;
+    text-align: center;
+}
 /*----------------small devices-----------------*/
 @media screen and (max-width: 900px) {
+    .icon-container{
+        width: 80%;
+        margin-left: 16%;
+    }
+    .list-items{
+        display: inline-block;
+    }
+    .colums{
+         width: 94%;
+    }
     nav img{
         visibility: hidden;
     }
