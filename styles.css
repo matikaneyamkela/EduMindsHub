@@ -4,7 +4,9 @@ body{
     box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
+strong{
+    color: #a704f3;
+}
 /*-----------------site header---------------------*/
 header{
     background: linear-gradient(to right, #f30404, #a129b9);
