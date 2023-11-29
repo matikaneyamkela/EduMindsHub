@@ -25,6 +25,10 @@ nav a{
     margin-right: 2%;
     font-weight: bold;
 }
+.links{
+    color: blue;
+    text-decoration: underline;
+}
 nav a:hover{
      background-color: white;
      color: black;
@@ -110,6 +114,7 @@ nav img{
          border-radius: 50%;
          width: 200px;
          height: 200px;
+         border: 3px solid red;
      }
      .team-members{
         display: inline;
