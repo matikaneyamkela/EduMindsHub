@@ -1,0 +1,87 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: linear-gradient(to right, #f30404, #a129b9);
+    width: 100%;
+    padding: .5%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 2%;
+}
+header img{
+    margin-left: 30%;
+    width: 50px;
+}
+.btn{
+    border: 1px solid blue;
+    padding: .3%;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    margin-right: 8.3%;
+}
+.offered-subjects{
+      width: 94%;
+      margin-left: 2%;
+      padding: 1%;
+      display: flex;
+      box-shadow: 5px 10px 18px rgb(247, 0, 255);
+      margin-bottom: 1%;
+}
+.title{
+    margin-top: 5%;
+    margin-left: 1%;
+    color: rgba(153, 0, 255, 0.507);
+}
+.description{
+     text-align: justify;
+     margin-left: 1%;
+     margin-right: 1%;
+}
+.sub{
+    width: 70%; 
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 0;
+    box-shadow: 5px 10px 18px red;
+    padding: 5px;
+}
+ul li a{
+    text-decoration: none;
+}
+/*-----------------small devices--------------------------*/
+@media screen and (max-width: 900px) {
+         .title{
+             font-size: 15px;
+             margin-top: 10%;
+             margin-left: 1%;
+             color: rgba(255, 0, 119, 0.507);
+         }
+         .offered-subjects{
+            display: inline-block;
+            width: 80%;
+            margin-left: 10%;
+         }
+         .sub{
+            width: 90%;
+            margin-left: 5%;
+         }
+         .description{
+            width: 90%;
+            margin-left: 5%;
+         }
+         img{
+            visibility: hidden;
+         }
+}
