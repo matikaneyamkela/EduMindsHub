@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background: linear-gradient(to right, #f30404, #a129b9);
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    margin-left: 1%;
+    font-weight: bold;
+ }
+ .container{
+    width: 94%;
+    height: auto;
+    margin-left: 2%;
+    box-shadow: 5px 10px 18px black;
+    display: flex;
+    padding: 1%;
+    margin-top: 2%;
+
+}
+.profile{
+     width: 41.4%;
+     margin-top: 2%;
+     padding: 2%;
+}
+.profile img{
+    width: 100%;
+}
+.message{
+    width: 56.6%;
+    height: auto;
+   
+
+    background-image: url(images/background.jpg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+}
+.message h1{
+    text-align: center;
+    color:white;
+    margin-top: 30%;
+}
+.browser{
+    border: 1px solid red;
+    padding: 2%;
+    width: 100%;
+    background-color: #f30404;
+    color: white;
+    font-weight: bold;
+    margin-left: 20%;
+}
+/*----------small devices----------------*/
+/*---------------small devices------------------*/
+@media screen and (max-width: 900px) {
+    .container{
+       margin-top:-90px;
+       display: inline-block;
+    }
+    .message{
+        width: 100%;
+        min-height: 300px;
+    }
+    .profile{
+        width: 100%;
+    }
+    .profile img{
+        width: 40%;
+        height: 140px;
+        margin-left: 25%;
+    }
+}
