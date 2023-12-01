@@ -20,31 +20,6 @@
     </div>
 
     <!-----------------scripts functions------------>
-<script>
-    function userdata(){
-        var fname = document.getElementById("name").value;
-        var sname = document.getElementById("surname").value;
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("password").value;
-
-        //user profile data
-        var unserprofile = {
-             name: fname,
-             Surname: sname,
-             Email: email
-        };
-
-        //simplicity
-        var profile = JSON.stringify(userdata)
-
-        alert("Successfully loged in");
-
-        //display user data
-        document.getElementById("userdata").innerHTML = "userdata:<br>"+profile;
-    }
-
-</script>
-    
 
     <div class="form">
         <form action="" method="post">
