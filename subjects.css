@@ -84,4 +84,6 @@ ul li a{
          img{
             visibility: hidden;
          }
+    p{ font-size: 10px;
+     }
 }
