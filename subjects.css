@@ -80,10 +80,9 @@ ul li a{
          .description{
             width: 90%;
             margin-left: 5%;
+              font-size: 10px;
          }
          img{
             visibility: hidden;
          }
-    p{ font-size: 10px;
-     }
 }
