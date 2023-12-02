@@ -20,14 +20,13 @@
     </div>
 
     <!-----------------scripts functions------------>
-
-    <div class="form">
-        <form action="" method="post">
+    <div class="form" id="form">
+        <form action="" method="post" id="form">
             <h4 style="color: red;text-align: center;">Login Now</h4>
            <input type="text" name="name" id="name" placeholder="Enter Your name..." required>
             <br>
             <br>
-           <input type="text" name="surname" id="surname" placeholder="Enter Your Surname...." required>
+           <input type="text" name="lastName" id="lastName" placeholder="Enter Your Surname...." required>
            <br>
            <br>
            <input type="email" name="email" placeholder="Enter Email Address...." required id="email">
@@ -39,6 +38,28 @@
             <button class="btn" type="submit">Login</button>
         </form>
     </div>
-    <script src="reading.js"></script>
+    <script>
+    //-------------------extRacting user data----------------->
+
+    const form = document.getElementById("form");
+    const name = document.getElementById("name");
+    const lastName = document.getElementById("lastName");
+    const email = document.getElementById("email");
+
+    //listen when use select submit button
+    form.addEventListener('submit', function(e){
+            e.preventDefault();
+
+      //values of data & storing data
+
+        localStorage.setItem('name', name.value);
+        localStorage.setItem('lastName', lastName.value);
+        localStorage.setItem('email', email.value);
+
+        //send to next page
+        window.location.href = "Profile.html";
+
+    })
+    </script>
 </body>
 </html>
