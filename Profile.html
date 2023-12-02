@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="pstyle.css">
 </head>
 <header>
-    <a href="index.html">Home</a>
+    <a href=index.html">Home</a>
 </header>
 <body>
     <div class="container">
@@ -15,17 +15,17 @@
       <h1>WELCOME USER!</h1>
      </div>
      <div class="profile">
-        <img src="user.png" alt="user profile">
+        <img src="icons/user.png" alt="user profile">
         <div id="userdata"></div>
 
         <!--------------user data------------>
-        <label for="name">Name:</label>
+        <label for="name">Name:<span id="name"></span></label>
         <br>
         <br>
-        <label for="sname">Surname:</label>
+        <label for="lastName">Surname:<span id="lastName"></span></label>
         <br>
         <br>
-        <label for="email">Email Address:</label>
+        <label for="email">Email Address:<span id="email"></span></label>
         <br>
         <br>
 
@@ -36,5 +36,17 @@
      </div>
     </div>
          
+    <script>
+        //taking data from another page
+    const name =localStorage.getItem('name');
+    const lastName =  localStorage.getItem('lastName');
+    const email =  localStorage.getItem('email');
+
+    //writing them
+    document.getElementById('name').textContent = name;
+    document.getElementById('lastName').textContent = lastName;
+    document.getElementById('email').textContent = email;
+
+    </script>
 </body>
 </html>
