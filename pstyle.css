@@ -80,4 +80,7 @@ header a{
         height: 140px;
         margin-left: 25%;
     }
+      label{
+        font-size: 10px;
+    }
 }
